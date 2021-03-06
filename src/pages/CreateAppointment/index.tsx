@@ -141,7 +141,7 @@ const CreateAppointment: React.FC = () => {
         <BackButton onPress={navigateBack}>
           <Icon name="chevron-left" size={24} color="#999591" />
         </BackButton>
-        <HeaderTitle>Cabeleireiros</HeaderTitle>
+        <HeaderTitle>Profissionais</HeaderTitle>
 
         <UserAvatar source={{ uri: user.avatar_url }} />
       </Header>

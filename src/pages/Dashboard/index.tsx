@@ -30,7 +30,7 @@ export interface Provider {
 }
 
 const Dashboard: React.FC = () => {
-  const { signOut, user } = useAuth();
+  const { user } = useAuth(); //signOut
   const { navigate } = useNavigation();
   const [providers, setProviders] = useState<Provider[]>([]);
 
@@ -65,7 +65,7 @@ const Dashboard: React.FC = () => {
         data={providers}
         keyExtractor={(provider) => provider.id}
         ListHeaderComponent={
-          <ProvidersListTitle>Cabeleireiros</ProvidersListTitle>
+          <ProvidersListTitle>Profissionais</ProvidersListTitle>
         }
         renderItem={({ item: provider }) => (
           <ProviderContainer onPress={() => navigateToCreateAppointment(provider.id)}>
